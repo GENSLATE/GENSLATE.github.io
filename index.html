@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dustin Angeletti · GENSLATE</title>
+  <meta name="description" content="Dustin Angeletti is a developer and engineer building GENSLATE: fast, portable desktop software, native Rust cores and practical AI tools." />
+  <meta name="author" content="Dustin Angeletti" />
+  <link rel="canonical" href="https://genslate.github.io/" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="theme-color" content="#2e3440" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#e5e9f0" media="(prefers-color-scheme: light)" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://genslate.github.io/" />
+  <meta property="og:title" content="Dustin Angeletti · GENSLATE" />
+  <meta property="og:description" content="Developer, engineer, AI. Building fast, portable software with a calm, flat design language." />
+  <meta property="og:image" content="https://genslate.github.io/assets/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/genslate-mark.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Apply the saved theme before first paint, and flag that JS is on for reveal animations. -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      d.dataset.theme = t;
+    })();
+  </script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dustin Angeletti",
+    "alternateName": "GENSLATE",
+    "url": "https://genslate.github.io/",
+    "jobTitle": "Developer, Engineer, AI",
+    "worksFor": { "@type": "Organization", "name": "GENSLATE", "url": "https://www.genslate.tech" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Ketchum", "addressRegion": "ID", "addressCountry": "US" },
+    "sameAs": ["https://github.com/GENSLATE", "https://www.genslate.tech"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="GENSLATE home">
+      <img src="assets/genslate-mark.svg" alt="" width="30" height="30" />
+      <span>GENSLATE</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme" type="button" aria-label="Switch color theme" title="Switch theme">
+      <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span>GENSLATE · Ketchum, Idaho</p>
+      <h1 id="hero-title" class="reveal">Dustin<br /><span class="grad">Angeletti</span></h1>
+      <p class="lede reveal">
+        Developer, engineer and AI builder. I make
+        <span class="rotator" aria-live="polite"><span class="word">portable desktop apps</span></span>
+      </p>
+      <div class="cta reveal">
+        <a class="btn primary" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-head reveal">
+        <p class="kicker">01 · About</p>
+        <h2 id="about-title">Fast, portable software with a calm design language.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="prose reveal">
+          <p>
+            I'm the developer behind <strong>GENSLATE</strong>. I build software that starts instantly,
+            runs from anywhere and gets out of your way, from native Rust cores up to pixel-matched
+            interfaces.
+          </p>
+          <p>
+            Right now that means <strong>SLATESUITE</strong>, a family of desktop apps that share one
+            design system, one typed bridge and one rule: nothing leaks outside the app's own folder.
+            Alongside it I'm bringing practical AI into everyday tools.
+          </p>
+        </div>
+        <dl class="facts reveal">
+          <div><dt>Based in</dt><dd>Ketchum, Idaho</dd></div>
+          <div><dt>Focus</dt><dd>Desktop apps, Rust, AI tooling</dd></div>
+          <div><dt>Building</dt><dd><a href="https://github.com/GENSLATE/GENSLATE-SLATESUITE">SLATESUITE</a></dd></div>
+          <div><dt>Status</dt><dd><span class="status" aria-hidden="true"></span>Open to work</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="stack" class="section" aria-labelledby="stack-title">
+      <div class="section-head reveal">
+        <p class="kicker">02 · Stack</p>
+        <h2 id="stack-title">Tools I reach for.</h2>
+      </div>
+      <div class="stack-grid">
+        <article class="card glow reveal">
+          <h3>Languages</h3>
+          <ul class="chips"><li>Rust</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>HTML</li><li>CSS</li></ul>
+        </article>
+        <article class="card glow reveal">
+          <h3>Frameworks</h3>
+          <ul class="chips"><li>Tauri 2</li><li>React</li><li>Tailwind CSS</li><li>Base UI</li><li>Vite</li></ul>
+        </article>
+        <article class="card glow reveal">
+          <h3>Tooling</h3>
+          <ul class="chips"><li>Bun</li><li>moon</li><li>Git</li><li>GitHub Actions</li><li>VS Code</li><li>Zed</li></ul>
+        </article>
+        <article class="card glow reveal">
+          <h3>AI</h3>
+          <ul class="chips"><li>LLM integration</li><li>Agents</li><li>Code intelligence</li><li>Automation</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section" aria-labelledby="work-title">
+      <div class="section-head reveal">
+        <p class="kicker">03 · Work</p>
+        <h2 id="work-title">Selected work.</h2>
+      </div>
+
+      <article class="feature card glow reveal">
+        <div class="feature-copy">
+          <p class="tag">Flagship · Desktop suite</p>
+          <h3>GENSLATE SLATESUITE</h3>
+          <p>
+            A family of fast, lightweight and strictly portable desktop apps sharing one unified Nord
+            design system. Every app runs from a flash drive and never writes outside its own tree.
+          </p>
+          <ul class="ticks">
+            <li>Tauri 2 and Rust 2024 core, tiny binaries, instant boot</li>
+            <li>Custom window chrome with pixel-matched titlebars on every OS</li>
+            <li>Design tokens compiled to CSS, Tailwind, TypeScript and Rust</li>
+            <li>End-to-end typed IPC and a moon + Bun monorepo</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="https://github.com/GENSLATE/GENSLATE-SLATESUITE">View on GitHub</a>
+          </div>
+        </div>
+        <figure class="feature-shot">
+          <img src="assets/slatesuite.png" width="1280" height="800" loading="lazy" decoding="async"
+               alt="The SLATESUITE design kit app in the Polar Night theme, with a custom titlebar, sidebar and color palette." />
+        </figure>
+      </article>
+
+      <h3 class="sub reveal">Inside the suite</h3>
+      <ul class="apps">
+        <li class="reveal" style="--c: var(--frost-2)"><b>Ed</b><span>Editor</span></li>
+        <li class="reveal" style="--c: var(--frost-3)"><b>Co</b><span>Coder</span></li>
+        <li class="reveal" style="--c: var(--frost-1)"><b>Te</b><span>Terminal</span></li>
+        <li class="reveal" style="--c: var(--purple)"><b>AI</b><span>AI Studio</span></li>
+        <li class="reveal" style="--c: var(--frost-4)"><b>Br</b><span>Browser</span></li>
+        <li class="reveal" style="--c: var(--green)"><b>Ex</b><span>Explorer</span></li>
+        <li class="reveal" style="--c: var(--yellow)"><b>Cm</b><span>Command</span></li>
+        <li class="reveal" style="--c: var(--orange)"><b>Ga</b><span>Gallery</span></li>
+        <li class="reveal" style="--c: var(--red)"><b>Ju</b><span>Jukebox</span></li>
+        <li class="reveal" style="--c: var(--purple)"><b>Th</b><span>Theater</span></li>
+        <li class="reveal" style="--c: var(--frost-2)"><b>Tb</b><span>Toolbox</span></li>
+        <li class="reveal" style="--c: var(--frost-3)"><b>La</b><span>Launcher</span></li>
+      </ul>
+
+      <div class="principles">
+        <article class="card glow reveal">
+          <span class="num">01</span>
+          <h3>Portable by default</h3>
+          <p>Settings, data and caches live next to the app. Copy the folder and you've moved everything.</p>
+        </article>
+        <article class="card glow reveal">
+          <span class="num">02</span>
+          <h3>Native and fast</h3>
+          <p>Rust where it counts, a thin webview where it helps. Small installers and no waiting.</p>
+        </article>
+        <article class="card glow reveal">
+          <span class="num">03</span>
+          <h3>Designed to the pixel</h3>
+          <p>One token system, flat surfaces and real contrast checks, so every app feels like one product.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="reveal">
+        <p class="kicker">04 · Contact</p>
+        <h2 id="contact-title">Let's build something<span class="grad"> fast</span>.</h2>
+        <p class="lede">I'm open to work, collaboration and interesting problems. The quickest way to reach me is below.</p>
+        <div class="cta center">
+          <a class="btn primary" href="https://github.com/GENSLATE">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn ghost" href="https://www.genslate.tech">genslate.tech</a>
+          <!-- Fill in and uncomment once the handles are final.
+          <a class="btn ghost" href="mailto:YOUR_EMAIL">Email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_HANDLE">LinkedIn</a>
+          <a class="btn ghost" href="https://x.com/YOUR_HANDLE">X</a>
+          <a class="btn ghost" href="https://discord.gg/YOUR_INVITE">Discord</a>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Dustin Angeletti · GENSLATE</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

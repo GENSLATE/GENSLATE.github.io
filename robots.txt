@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://genslate.github.io/sitemap.xml

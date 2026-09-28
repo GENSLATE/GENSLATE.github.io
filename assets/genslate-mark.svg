@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>GENSLATE</title>
+  <!--
+    Flat Nord mark: three stacked slates (Frost nord8 → nord9 → nord10) on a Polar Night plate.
+    Plate follows the macOS Big Sur icon grid: 824 × 824 at (100, 100) on a 1024 canvas, radius 185.
+    No gradients; the only effect is the grid's standard drop shadow.
+  -->
+  <defs>
+    <filter id="drop" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Plate · nord0 with a nord1 hairline rim -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="#2e3440" filter="url(#drop)"/>
+  <rect x="102" y="102" width="820" height="820" rx="183" fill="none" stroke="#3b4252" stroke-width="4"/>
+
+  <!-- Bottom slate · nord10 -->
+  <path d="M282 595 L512 727 L512 761 L282 629 Z" fill="#4c6a8f"/>
+  <path d="M512 727 L742 595 L742 629 L512 761 Z" fill="#3e5878"/>
+  <path d="M512 463 L742 595 L512 727 L282 595 Z" fill="#5e81ac"/>
+
+  <!-- Middle slate · nord9 -->
+  <path d="M282 495 L512 627 L512 661 L282 529 Z" fill="#6983a0"/>
+  <path d="M512 627 L742 495 L742 529 L512 661 Z" fill="#566d88"/>
+  <path d="M512 363 L742 495 L512 627 L282 495 Z" fill="#81a1c1"/>
+
+  <!-- Top slate · nord8 -->
+  <path d="M282 395 L512 527 L512 561 L282 429 Z" fill="#6c9ba9"/>
+  <path d="M512 527 L742 395 L742 429 L512 561 Z" fill="#5a8390"/>
+  <path d="M512 263 L742 395 L512 527 L282 395 Z" fill="#88c0d0"/>
+  <path d="M282 395 L512 263 L742 395" fill="none" stroke="#eceff4" stroke-opacity="0.35" stroke-width="3" stroke-linejoin="round"/>
+</svg>
